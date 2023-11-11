@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-    'devconnector',
+    'lemurconnector',
     'corsheaders'
 ]
 
@@ -44,7 +44,7 @@ MIDDLEWARE = [
 
 
 CORS_ORIGIN_WHITELIST = [
-     'https://soft-kitsune-a578bf.netlify.app/' # Use your Netlify domain here
+     'https://soft-kitsune-a578bf.netlify.app' # Use your Pythonanywhere domain here, I used netlify here, because that is what i originally planned to use.
 ]
 ROOT_URLCONF = 'mysite.urls'
 
@@ -97,7 +97,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Authentication user model
-AUTH_USER_MODEL = 'devconnector.User'
+AUTH_USER_MODEL = 'lemurconnector.User'
 
 
 # Internationalization
