@@ -72,7 +72,7 @@ This project uses Django as a backend framework to provide a RESTful API and Rea
 
 ## Configuration
 
-Discuss how to configure the Django settings for different environments, including key storage and retrieval.
+
 
 ## Troubleshooting Common Issues
 
@@ -91,17 +91,19 @@ Ensure Django settings for `STATIC_URL` and `STATIC_ROOT` are configured properl
 - Run `python manage.py migrate` to ensure all migrations are applied.
 - Check if the SQLite3 database file is present and intact.
 
+- 
+### Build and Deployment on Pythonanywhere
+
+After days and days of troubleshooting, I decided to abandon my original idea of hosting the backend api on pythonanywhere, and the frontend on entlify and connecting both of them through a Proxy. I decided to try using cactus but without much success, and ultimately spent days and days trying and troubleshooting different methods to ensure I could host the backend and frontend on the same hosting provider. Although it wasn't easy, I ultimately used django's template generator which isn't very intuitive to use, but works incredibly well. Setting it up on Pythonanywhere, was however, an equation I thought I would never solve.
+
 ### Build and Deployment on Netlify
 
 Adjust build scripts for Netlify deployment to use the Linux environment settings.
 
-## FAQ
-
-Answers to commonly asked questions regarding setup, features, and troubleshooting.
 
 ## Contributing
 
-We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests to us.
+I welcome contributions! Please read my [CONTRIBUTING.md](CONTRIBUTING.md) for details on my code of conduct and the process for submitting pull requests to this project.
 
 ## License
 
@@ -109,8 +111,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-- Issue Tracker: https://github.com/yourusername/lemurconnect/issues
-- Email: support@lemurconnect.com
+- Email: s@pacifictrout.com
 
 ---
 
