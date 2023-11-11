@@ -115,4 +115,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ---
 
-Please note that 'LemurConnect' is a placeholder name for the project repository. Replace 'yourusername' with your actual GitHub username and update the contact email to the project's support line.
