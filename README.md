@@ -2,7 +2,7 @@
 # LemurConnect
 
 LemurConnect is a social networking platform for professionals to connect, share, and collaborate. This Django-React application provides a robust backend API with a sleek, responsive frontend.
-
+https://lemurconnect.pacifictrout.com
 ## Table of Contents
 
 - [Introduction](#introduction)
