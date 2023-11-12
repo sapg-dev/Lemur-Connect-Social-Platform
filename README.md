@@ -188,7 +188,7 @@ Adjust build scripts for Netlify deployment to use the Linux environment setting
 
 ## Contributing
 
-I welcome contributions! Please read my [CONTRIBUTING.md](CONTRIBUTING.md) for details on my code of conduct and the process for submitting pull requests to this project.
+I welcome contributions! Please read my [CONTRIBUTING.md](CONTRIBUTING.md)(soon to come) for details on my code of conduct and the process for submitting pull requests to this project.
 
 ## License
 
