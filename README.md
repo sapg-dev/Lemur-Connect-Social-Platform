@@ -52,7 +52,7 @@ This project uses Django as a backend framework to provide a RESTful API and Rea
    ```shell
    python manage.py migrate
    ```
-5. Collect static files:
+5. Collect static files(before that the build directory should be created and populated with the optimized build production):
    ```shell
    python manage.py collectstatic --noinput
    ```
