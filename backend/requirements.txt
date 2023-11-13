@@ -1,7 +1,6 @@
 asgiref
 certifi
 chardet
-coreschema
 Django
 djangorestframework
 idna
@@ -13,3 +12,4 @@ requests
 sqlparse
 uritemplate
 urllib3
+django-cors-headers

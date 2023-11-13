@@ -13,7 +13,7 @@ SECRET_KEY = 'oe^28i&n*(euqoyq$^$he###ga@5r9!s3!)2-5)q$1)(-jw+!d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', '*').split(' ')
 
 
 # Application definition
@@ -118,6 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/backend/staticroot/'
 
 GIT_CLIENT_ID = ''
 GIT_CLIENT_SECRET = ''
