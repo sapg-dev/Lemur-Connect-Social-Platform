@@ -14,6 +14,7 @@ https://lemurconnect.pacifictrout.com
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technology Stack](#technology-stack)
+- [Docker](#docker)
 - [Setup and Installation](#setup-and-installation)
 - [Configuration](#configuration)
 - [Troubleshooting Common Issues](#troubleshooting-common-issues)
@@ -39,6 +40,60 @@ This project uses Django as a backend framework to provide a RESTful API and Rea
 - **Backend:** Django REST Framework for a powerful API backend
 - **Database:** SQLite for development, PostgreSQL for production
 - **Styling:** Bootstrap for responsive design
+
+
+## Running the Application with ![Docker Badge](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat)
+
+This project is configured to run with Docker, simplifying development and deployment processes. Below are the instructions to get it up and running on your local machine.
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+### Docker
+
+1. **Clone the Repository**
+
+   If you haven't already done so, clone the repository to your local machine using:
+
+   ```sh
+   git clone https://github.com/sapg-dev/Lemur-Connect-Social-Platform.git
+   cd Lemur-Connect-Social-Platform
+
+2. **Build and Run the Containers**
+
+
+From the root directory of the project, where the docker-compose.yml file is located, run the following command to build and run the backend and frontend services in Docker containers:
+
+
+   ```sh
+   docker-compose up --build
+   ```
+The --build flag is optional and is used to build the images before starting the containers. If you have already built the images and made no changes to the Dockerfiles, you can omit this flag and just run docker-compose up.
+
+4. **Accessing the Application**
+
+5. Once the containers are running, you can access the application as follows:
+
+   Frontend: Open your web browser and visit http://localhost:3000
+   Backend: The backend API will be available at http://localhost:8000
+   Caution: You may need to change axios.defaults.baseurl, and the proxy in packages.json
+
+6. **Stopping the Application**
+
+         
+      To stop the running containers, use the following command:
+      ```sh
+   
+      docker-compose down
+      If you want to remove the volumes along with the containers, add the -v flag:
+      ```
+      ```sh
+      docker-compose down -v
+      ```
+
 
 ## Setup and Installation
 
