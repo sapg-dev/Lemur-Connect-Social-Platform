@@ -62,6 +62,7 @@ class CommentSerializer(serializers.ModelSerializer):
     name = serializers.CharField(source='user.name',read_only=True)
     avatar = serializers.URLField(source='user.avatar',read_only=True)
     
+    
     class Meta:
         model = Comment
         fields = ['id','user','post','text','date','name','avatar']
