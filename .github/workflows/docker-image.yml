@@ -7,12 +7,12 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - name: Build the Backend Docker image
+      run: docker build -f Lemur-Connect-Social-Platform/backend/Dockerfile -t my-backend-image:$(date +%s) .
+    - name: Build the Frontend Docker image
+      run: docker build -f Lemur-Connect-Social-Platform/frontend/Dockerfile -t my-frontend-image:$(date +%s) .
