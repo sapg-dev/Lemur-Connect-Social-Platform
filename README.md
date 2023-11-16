@@ -1,3 +1,7 @@
+
+[![Docker Compose CI](https://github.com/sapg-dev/Lemur-Connect-Social-Platform/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/sapg-dev/Lemur-Connect-Social-Platform/actions/workflows/docker-image.yml)
+
+
 ![Python Badge](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat)
 ![Django Badge](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=fff&style=flat)
 ![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat)
