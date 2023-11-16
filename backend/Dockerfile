@@ -9,7 +9,7 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /backend
 
 # Copy the current directory contents into the container at /backend
-COPY . /backend/
+COPY ./backend /backend/
 
 # Install any needed packages specified in requirements.txt
 # The `--no-binary` flag forces pip to use pre-built wheels instead of compiling from source.
