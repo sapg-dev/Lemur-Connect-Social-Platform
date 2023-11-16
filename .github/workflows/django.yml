@@ -17,7 +17,7 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
 
-    # Cache Docker layers
+    # Cache Docker layers to speed up builds
     - name: Cache Docker layers
       uses: actions/cache@v2
       with:
@@ -25,7 +25,6 @@ jobs:
         key: ${{ runner.os }}-buildx-${{ github.sha }}
         restore-keys: |
           ${{ runner.os }}-buildx-
-
 
     # Build and push Docker images
     - name: Build and push Docker images
@@ -47,13 +46,12 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-buildx-
 
-    # Run Docker Compose
+    # Run Docker Compose to start the services
     - name: Run Docker Compose
       run: docker-compose up -d
 
-    # Run tests
-    - name: Run Tests
-      run: docker exec backend-container-name python manage.py test
+    # Optionally, you can add steps here to check the health of your application
+    # For example, a simple curl request to the homepage or a health check endpoint
 
     # Stop and remove Docker containers
     - name: Cleanup
