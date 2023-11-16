@@ -1,5 +1,6 @@
 
-[![Docker Compose CI](https://github.com/sapg-dev/Lemur-Connect-Social-Platform/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/sapg-dev/Lemur-Connect-Social-Platform/actions/workflows/docker-image.yml)
+[![Docker CI](https://github.com/sapg-dev/Lemur-Connect-Social-Platform/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/sapg-dev/Lemur-Connect-Social-Platform/actions/workflows/docker-image.yml)
+[![Docker CI Django](https://github.com/sapg-dev/Lemur-Connect-Social-Platform/actions/workflows/docker-image.yml/badge.svg)](https://github.com/sapg-dev/Lemur-Connect-Social-Platform/actions/workflows/docker-image.yml)
 
 
 ![Python Badge](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat)
